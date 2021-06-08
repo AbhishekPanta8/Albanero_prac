@@ -139,3 +139,7 @@ if (n < 1) {
 } else {
   alert( pow(x, n) );
 } */
+
+//Rewrite using arrows
+let ask = (question,yes,no)=> confirm(question) ? yes() : no();
+ask("do you agree?",()=> {alert('you agreed!');},()=>{alert("you cancelled the execution");});
