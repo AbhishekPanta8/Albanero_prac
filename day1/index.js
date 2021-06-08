@@ -44,3 +44,65 @@ let message = (login == 'Employee') ? 'Hello' :
   (login == 'Director') ? 'Greetings' :
   (login == '') ? 'No login' :
   ''; */
+
+/* //10.Check login
+let userName = prompt("Who's there?", '');
+
+if (userName === 'Admin') {
+
+  let password= prompt('Password?', '');
+
+  if (password=== 'TheMaster') {
+    alert( 'Welcome!' );
+  } else if (password=== '' || password=== null) {
+    alert( 'Canceled' );
+  } else {
+    alert( 'Wrong password' );
+  }
+
+} else if (userName === '' || userName === null) {
+  alert( 'Canceled' );
+} else {
+  alert( "I don't know you" );
+} */
+
+//In while loop ++i returns new value whereas i++ returns new value.
+//The value returned by the increment is not used in for loop, so there’s no difference between i++ and ++i.
+
+/* //10.OUtput even numbers
+for (let i = 2; i <= 10; i++) 
+{
+  if (i % 2 == 0){
+    alert(i);
+  }
+} */
+
+/* //11.Replace for with while
+let i = 0;
+while (i < 3){
+  alert(`number ${i}!`);
+  i++;
+} */
+
+/* //12.Repeat until it is correct
+let a;
+do{
+  a= prompt("Enter greater than 100",0);
+}while(num<=100 && num);
+// alert(a);
+ */
+
+//output prime number
+/* let h = prompt("Enter the value of n(greater than 2)");
+
+for(let i=2;i<=h;i++){
+  let flag=0;
+  for(let j=2;j<=i/2;j++){
+    if(i%j==0){
+      flag=1;
+      break;
+    }
+  }
+  if(flag==0)
+    console.log(i);
+} */
