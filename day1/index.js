@@ -37,7 +37,7 @@ else if(num<1) alert(-1);
 else alert(0); */
 
 /* //8.convert to ?
-let result = (a + b < 4) ? 'Below' : 'Over'; */
+let val = (a + b < 4) ? 'Below' : 'Over'; */
 
 /* //9.convert to ?
 let message = (login == 'Employee') ? 'Hello' :
@@ -105,4 +105,37 @@ for(let i=2;i<=h;i++){
   }
   if(flag==0)
     console.log(i);
+} */
+
+/* *** Functions *** */
+
+/* //Rewrite function using ? and ||
+function checkAge(age){
+  return (age > 18) ? true : confirm('Did parents allow you?');
+}
+function checkAge(age) {
+  return (age > 18) || confirm('Did parents allow you?');
+} */
+
+/* //function min(a,b)
+function min(a, b) {
+  return a < b ? a : b;
+}
+ */
+
+/* //Function power
+function pow(x, n) {
+  let val = x;
+  for (let i = 1;i<n;i++) {
+    val *= x;
+  }
+  return val;
+}
+let x = prompt("Enter x:", '');
+let n = prompt("Enter y", '');
+
+if (n < 1) {
+  alert(`Enter only positive value!`);
+} else {
+  alert( pow(x, n) );
 } */
