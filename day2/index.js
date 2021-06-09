@@ -41,3 +41,39 @@ let menu = {
   title: "My menu"
 };
 multiplyNumeric(menu); */
+
+/*Create a calcultor */
+/* let calculator = {
+  read() {
+    this.a = +prompt('Enter 1st val:', 0);
+    this.b = +prompt('Enter 2nd val:', 0);
+  },
+  sum() {
+    return this.a + this.b;
+  },
+  mul() {
+    return this.a * this.b;
+  },
+};
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() ); */
+
+//Create new calcultor
+function Calculator() {
+  this.read = function() {
+    this.a = Number(prompt('a?', 0));
+    this.b = Number(prompt('b?', 0));
+  };
+  this.sum = function() {
+    return this.a + this.b;
+  };
+  this.mul = function() {
+    return this.a * this.b;
+  };
+}
+let calculator = new Calculator();
+calculator.read();
+
+console.log( "Sum=" + calculator.sum() );
+console.log( "Mul=" + calculator.mul() );
